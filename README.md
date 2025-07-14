@@ -26,14 +26,19 @@ All pretrained models were fine-tuned using 4-fold stratified cross-validation.
 - Training/Evaluation Time
 
 ##  Results Summary
-- **VGG19** achieved the best performance across most metrics and was the fastest to converge.
-- All transfer learning models outperformed the custom CNN baseline in accuracy and efficiency.
-- Detailed per-class performance and comparative analysis are included in the report.
+- VGG19 achieved the best overall performance with the highest accuracy, precision, recall, and F1-score. It also trained the fastest due to early stopping (epoch 18).
+- MobileNetV2 and DenseNet121 showed similar strong performance, with MobileNetV2 offering better efficiency and DenseNet121 requiring more time due to its depth.
+- EfficientNetB0 had slightly lower metrics, close to the CNN trained from scratch.
+- The CNN from scratch performed reasonably well but was outperformed by all transfer learning models.
+- Overall, transfer learning outperformed training from scratch, confirming its effectiveness for multi-class chest X-ray classification.
 
-##  Contents
-- `models/`: Saved `.h5` and `.pkl` model files  
-- `notebooks/`: Training and evaluation notebooks  
-- `plots/`: ROC curves, confusion matrices, accuracy/loss curves  
-- `report/`: Final research document in DOCX and PDF  
-- `results.csv`: Metric scores for all models
+## Project Structure
 
+├── cnn_classification.ipynb     # Jupyter Notebook with full code and analysis  
+├── xray_classification_nn.pdf               # Complete written thesis  
+└── README.md                      # Project description and setup  
+
+## Contact
+For questions or collaboration:
+- Email: dadakidisgiorgos@gmail.com
+- LinkedIn: [https://www.linkedin.com/in/dadakys](https://www.linkedin.com/in/giorgos-dadakidis/)
