@@ -34,8 +34,8 @@ All pretrained models were fine-tuned using 4-fold stratified cross-validation.
 
 ## Project Structure
 
-├── cnn_classification.ipynb     # Jupyter Notebook with full code and analysis  
-├── xray_classification_nn.pdf               # Complete written thesis  
+├── xray_classification_nn.ipynb     # Jupyter Notebook with full code and analysis  
+├── xray_classification_nn.pdf               # Complete written research  
 └── README.md                      # Project description and setup  
 
 ## Contact
